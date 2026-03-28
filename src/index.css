@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@theme {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --color-bg: #FAF9F6;
+  --color-surface: #FFFFFF;
+  --color-accent: #E65100;
+  --color-black: #1A1A1A;
+  --color-text-2: rgba(74, 74, 74, 0.8);
+
+  --spacing-section: 80px;
+  --padding-h: 10vw;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --spacing-section: 160px;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-black font-body antialiased overflow-x-hidden;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
+
+.asymmetrical-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .asymmetrical-grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+}
+
+.section-padding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-left: var(--padding-h);
+    padding-right: var(--padding-h);
+  }
+}
+
+.label-text {
+  @apply font-label uppercase tracking-[0.2em] text-[12px] font-bold;
+}
