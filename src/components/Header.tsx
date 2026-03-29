@@ -34,7 +34,7 @@ export default function Header() {
           href="https://www.google.com/maps/place/COCA+Coffee+Shop+%26+Roastery/@-7.3304423,110.502092,17z/data=!3m1!4b1!4m6!3m5!1s0x2e7a79005999f87d:0xa3b6bbe91420075!8m2!3d-7.3304476!4d110.5069629!16s%2Fg%2F11ywpfpy8v?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" 
           target="_blank" 
           rel="noreferrer"
-          className="bg-accent text-white px-6 py-2.5 rounded-lg label-text text-[11px] hover:bg-black transition-all duration-300 shadow-sm"
+          className="bg-black text-white px-6 py-2.5 rounded-lg label-text text-[11px] hover:bg-accent transition-all duration-300 shadow-sm"
         >
           Visit Us
         </a>

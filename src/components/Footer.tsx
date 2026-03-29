@@ -23,7 +23,7 @@ export default function Footer() {
               href="https://www.instagram.com/coca.coffeeshoproastery/" 
               target="_blank" 
               rel="noreferrer" 
-              className="text-sm block hover:text-accent"
+              className="text-sm block hover:text-accent py-2"
             >
               Instagram
             </a>
@@ -31,7 +31,7 @@ export default function Footer() {
               href="https://www.tiktok.com/@coca.coffeeshoproastery?_r=1&_t=zs-92b2vamt7qo" 
               target="_blank" 
               rel="noreferrer" 
-              className="text-sm block hover:text-accent"
+              className="text-sm block hover:text-accent py-2"
             >
               TikTok
             </a>

@@ -41,6 +41,9 @@ export default function SignatureMenu() {
                   alt={item.name} 
                   className="w-4/5 md:w-3/4 h-auto object-contain rounded-xl grayscale group-hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
+                  width={1184}
+                  height={864}
+                  loading="lazy"
                 />
               </div>
               <div className="flex justify-between items-baseline mb-2">

@@ -49,6 +49,9 @@ export default function Hero() {
               alt="COCA Coffee Shop Salatiga" 
               className="w-full h-auto object-contain"
               referrerPolicy="no-referrer"
+              fetchPriority="high"
+              width={913}
+              height={1223}
             />
           </motion.div>
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-accent rounded-full -z-10 opacity-20 blur-3xl"></div>

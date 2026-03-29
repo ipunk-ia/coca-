@@ -30,6 +30,9 @@ export default function BentoGrid() {
               alt={item.name} 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               referrerPolicy="no-referrer"
+              width={item.name === "Donat Klasik" ? 1200 : item.name === "Butter Croissant" ? 1926 : item.name === "Tahu Bakso" ? 1000 : 1200}
+              height={item.name === "Donat Klasik" ? 676 : item.name === "Butter Croissant" ? 1284 : item.name === "Tahu Bakso" ? 563 : 675}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
               <div className="flex justify-between items-end">
