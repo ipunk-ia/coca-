@@ -17,7 +17,7 @@ export default function SignatureMenu() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-12 md:mb-20 gap-8">
           <div className="w-full text-center lg:text-left">
-            <span className="label-text text-accent mb-4 block">The Roastery</span>
+            <span className="label-text text-[#FF8A4C] mb-4 block">The Roastery</span>
             <h2 className="text-4xl md:text-5xl lg:text-7xl mb-4">Signature Menu</h2>
           </div>
           <p className="text-white/60 max-w-sm text-center lg:text-right mx-auto lg:mx-0 text-sm md:text-base">
@@ -35,22 +35,22 @@ export default function SignatureMenu() {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.2 }}
             >
-              <div className="overflow-hidden rounded-2xl mb-6 bg-white/5 p-10 md:p-14 flex justify-center items-center">
+              <div className="overflow-hidden rounded-2xl mb-6 bg-white/5 p-3 md:p-4 flex justify-center items-center aspect-[4/3]">
                 <img 
                   src={item.img} 
                   alt={item.name} 
-                  className="w-4/5 md:w-3/4 h-auto object-contain rounded-xl grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
-                  width={1184}
-                  height={864}
+                  width={1250}
+                  height={975}
                   loading="lazy"
                 />
               </div>
               <div className="flex justify-between items-baseline mb-2">
                 <h3 className="text-2xl font-heading">{item.name}</h3>
-                <span className="font-label text-accent">{item.price}</span>
+                <span className="font-label text-[#FF8A4C]">{item.price}</span>
               </div>
-              <p className="text-white/40 text-sm">{item.desc}</p>
+              <p className="text-white/70 text-sm">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -60,7 +60,7 @@ export default function SignatureMenu() {
             href="https://drive.google.com/drive/folders/1TU8hestPxPRqxsP_FxY4WAA8p8UCsGox" 
             target="_blank"
             rel="noreferrer"
-            className="bg-accent text-white px-12 py-6 rounded-full font-label uppercase tracking-widest text-sm hover:bg-white hover:text-accent transition-all duration-300"
+            className="bg-white text-black px-12 py-6 rounded-full font-label uppercase tracking-widest text-sm hover:bg-[#FF8A4C] hover:text-white transition-all duration-300"
           >
             View Full Menu
           </a>
@@ -69,7 +69,7 @@ export default function SignatureMenu() {
         <div className="mt-16 md:mt-32 pt-10 md:pt-20 border-t border-white/10">
           <div className="flex items-center gap-4 mb-12">
             <div className="h-[1px] flex-1 bg-white/10"></div>
-            <span className="label-text text-accent">Secret Menu</span>
+            <span className="label-text text-[#FF8A4C]">Secret Menu</span>
             <div className="h-[1px] flex-1 bg-white/10"></div>
           </div>
           
@@ -78,7 +78,7 @@ export default function SignatureMenu() {
               <div key={item.name} className="flex justify-between items-center p-8 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors">
                 <div>
                   <h4 className="text-xl mb-1">{item.name}</h4>
-                  <p className="text-white/40 text-sm">{item.desc}</p>
+                  <p className="text-white/70 text-sm">{item.desc}</p>
                 </div>
               </div>
             ))}
